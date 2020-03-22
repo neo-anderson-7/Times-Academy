@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--We promise to maintain the honour and discipline of our school and work diligently at all times.-->
+<!--
+What to ask: 
+
+1) Content given or not?
+2) Any idea what kind of widget we have to draw (todo list, shopping cart)?
+3) JS Libraries allowed or not?
+-->
+<html>
+<head>
+    <title>Template</title>
+    <link rel="icon" type="image/x-icon" href="tf2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-size: 1em;
+            line-height: 30px;
+            font-family: 'Raleway', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .banner {
+            position: absolute;
+            width: 110%;
+            height: 250%;
+            border-radius: 0px 0px 0px 120px;
+            transform: rotate(-15deg);
+            top: -140%;
+            left: -5%;
+            background-color: #32ccff;
+            z-index: 0;
+        }
+        
+        .wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-attachment: fixed;
+        }
+        
+        .nav {
+            position: fixed;
+            width: 100%;
+            height: 9%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+            background-color: #32ccff;
+            color: white;
+        }
+        
+        .ul {
+            padding: 10px 20px;
+            transition: all 0.2s ease;
+            position: relative;
+            text-decoration: none;
+            display: inline-block;
+            left: 37%;
+            top: 15%;
+        }
+        
+        .ul::after {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            color: transparent;
+            content: ".";
+            background-color: white;
+            height: 2px;
+            width: 0%;
+            transition: all 0.2s ease;
+        }
+        
+        .ul:hover::after {
+            width: 100%;
+            height: 30px;
+            color: dodgerblue;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        #ch1:hover::after {
+            content: "Label1";
+        }
+        
+        #ch2:hover::after {
+            content: "Label2";
+        }
+        
+        #ch3:hover::after {
+            content: "Label3";
+        }
+        
+        #ch4:hover::after {
+            content: "Label4";
+        }
+        
+        .tag {
+            position: absolute;
+            top: 45%;
+            font-size: 2.3em;
+            left: 20%;
+            font-weight: 900;
+            color: white;
+            text-shadow: 0px -1px 1px #9a9a9a, -1px 0px 1px #9a9a9a, 0px 1px 1px #9a9a9a, 1px 0px 1px #9a9a9a;
+        }
+        
+        .stag {
+            position: absolute;
+            top: 52%;
+            font-size: 1.2em;
+            color: white;
+            text-shadow: 0px -1px black, 0px -1px black, 0px -1px black, 0px -1px black;
+            left: 23%;
+            background-color: rgba(0,0,0,0.7);
+            padding: 20px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .stag:hover {
+            background-color: rgba(0,0,0,1);
+            transition: all 0.3s ease;
+        }
+        
+        .txt {
+            width: 70%;
+            left: 15%;
+            position: absolute;
+            top: 130%;
+            z-index: 1;
+            height: 100%;
+        }
+        
+        .txt>div {
+            display: block;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            position: relative;
+        }
+    
+        .head {
+            width: 100%;
+            text-align: center;
+            font-size: 1.5em;
+            display: block;
+            font-weight: 900;
+        }
+        
+        .price {
+            position: relative;
+            width: 29%;
+            height: 450px;
+            display: inline-block;
+            margin: 20px;
+            box-shadow: 0px 3px 81px 0px rgba(216, 216, 216, 0.45);
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+    <script>
+    $(document).ready(function(){
+    $('#ch1').click(function(){
+       $('body,html').animate({
+           scrollTop : 0
+       }, 500);
+       return false;
+    }); 
+    });
+        
+    $(document).ready(function(){
+    $('#ch2').click(function(){
+       $('body,html').animate({
+           scrollTop : 950
+       }, 500);
+       return false;
+    }); 
+    });
+        
+    $(document).ready(function(){
+    $('#ch3').click(function(){
+       $('body,html').animate({
+           scrollTop : 1700
+       }, 500);
+       return false;
+    }); 
+    });
+        
+    $(document).ready(function(){
+    $('#ch4').click(function(){
+       $('body,html').animate({
+           scrollTop : 2400
+       }, 500);
+       return false;
+    }); 
+    });
+    </script>
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+<div class="nav"><img style="position: absolute; width: 4.5%; display: inline-block; left: 12%;" src="tf2.png";><div style="padding: 19px; position: absolute; font-size: 1.2em; left: 15.5%;">Logo</div>
+<div class="ul" id="ch1">Label1</div><div class="ul" id="ch2">Label2</div><div class="ul" id="ch3">Label3</div>
+<div class="ul" id="ch4">Label4</div></div>
+<div class="banner"></div><img src="tf2.png" style="z-index: 1; position: absolute; width: 40%; top: 12%; right: 0;">
+<span class="tag">Tagline goes here</span><a class="stag" href="">Button / Sub tagline</a></div>
+    
+<div class="txt">
+<div class="about"><div class="head"><br><br>About Us<br><br></div>
+<img style="display: inline-block; float: left; width: 50%;" src="tf1.jpg">
+<div style="position: relative; left: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas risus mi, efficitur ut ex sed, ullamcorper finibus massa. Nam at imperdiet dolor, et vehicula enim. Phasellus sed sagittis mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis non molestie mi, ut interdum lectus. Vestibulum molestie lorem nunc, eu commodo quam consectetur ac. Pellentesque rhoncus nisi et magna pretium vestibulum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Quisque rutrum non nisi et ultrices. Curabitur ultrices fringilla efficitur. Vivamus felis enim, hendrerit quis orci eget, gravida accumsan velit. Aenean eu viverra orci. Integer eu posuere est. Aenean vel neque at massa condimentum consequat. Etiam tincidunt quis mauris et scelerisque. Maecenas ullamcorper arcu sem, eget rutrum augue fermentum ut. Suspendisse vitae finibus lorem. In interdum feugiat mauris id volutpat. Duis magna quam, vulputate id iaculis et, accumsan sit amet ex. Proin molestie eros vel turpis volutpat interdum. Quisque ac est quis elit commodo varius eget in orci. Quisque viverra quam eu erat varius mollis. Sed augue tortor, malesuada eu volutpat non, suscipit vel diam.</div>
+</div>
+<div class="whyus"><div class="head"><br><br>Why Us<br><br></div>
+In interdum feugiat mauris id volutpat. Duis magna quam, vulputate id iaculis et, accumsan sit amet ex. Proin molestie eros vel turpis volutpat interdum. Quisque ac est quis elit commodo varius eget in orci. Quisque viverra quam eu erat varius mollis. Sed augue tortor, malesuada eu volutpat non, suscipit vel diam. Ut egestas orci at tristique gravida. Donec nisi mauris, rhoncus eu mauris quis, semper elementum orci. Suspendisse justo sem, varius tincidunt sapien vel, consectetur molestie magna. Donec id ante et mauris posuere malesuada. Morbi a nisl diam.
+<img style="width: 100%; position: relative; left: 0; top: 30px;" src="tf3.jpg">
+</div>
+<div class="pricebar"><div class="head"><br><br>Pricing<br><br></div>
+<div class="price"><img src="tf4.png"><br><span style="color: dodgerblue;">Headline</span><br><span style="font-size: 1.6em;">$50 <span style="font-size: 0.6em !important;">/month</span></span><ul style="list-style: none; padding-left: 0;"><li>One</li><li>Two</li><li>Three</li><li>Another One</li><li>Still one</li><li>Yet Another</li><li>Damn It</li><li>Goddammit!</li></ul></div>
+<div class="price"><img src="tf5.png"><br><span style="color: dodgerblue;">Headline</span><br><span style="font-size: 1.6em;">$50 <span style="font-size: 0.6em !important;">/month</span></span><ul style="list-style: none; padding-left: 0;"><li>One</li><li>Two</li><li>Three</li><li>Another One</li><li>Still one</li><li>Yet Another</li><li>Damn It</li><li>Goddammit!</li></ul></div>
+<div class="price"><img src="tf6.png"><br><span style="color: dodgerblue;">Headline</span><br><span style="font-size: 1.6em;">$50 <span style="font-size: 0.6em !important;">/month</span></span><ul style="list-style: none; padding-left: 0;"><li>One</li><li>Two</li><li>Three</li><li>Another One</li><li>Still one</li><li>Yet Another</li><li>Damn It</li><li>Goddammit!</li></ul></div>
+</div>
+</div>
+</body>
+</html>
