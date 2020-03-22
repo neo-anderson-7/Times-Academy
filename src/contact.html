@@ -8,9 +8,30 @@
     <script src="script.js"></script><!--JS Script-->
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"><!-- Font -->
     <script src="https://kit.fontawesome.com/560be50dc6.js"></script><!--Font Awesome-->
-    <title>Contact - Jaitley's Times Academy</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script><!--JQuery-->
+
+    <title>Contact US - Jaitley's Times Academy</title>
+    <script>
+        var show = false;
+        function toggle() {
+            var scrolled = window.pageYOffset;
+            var pixels = (scrolled + 90).toString() + "px";
+            document.getElementById("dropDown").style.top = pixels;            
+
+            show = !show;
+            document.getElementById("dropDown").style.display = (show) ? "block" : "none";
+        }
+
+        function scroll() {
+            if (show) {
+                var scrolled = window.pageYOffset;
+                var pixels = (scrolled + 90).toString() + "px";
+                document.getElementById("dropDown").style.top = pixels;
+            }
+        }
+    </script>
 </head>
-<body>
+<body onscroll="scroll()">
     <div class="nav prop">
         <table>
             <tr>
@@ -19,24 +40,33 @@
                     <img src="images/JTA LOGO only png.png" id="headpic">
                 </td>
                 <td>
-                    <span><a href="index.html">Home</a></span>
+                    <span><a href="index.html" class="active">Home</a></span>
                 </td>
                 <td>
-                    <span><a>IELTS <i class="fas fa-chevron-down"></i></a></span> <!-- Add JS function for hover and drop down (IELTS and Spoken English) -->
+                    <span id="dropDownTrigger" onclick="toggle()"><a>IELTS <i class="fas fa-chevron-down"></i></a></span> <!-- Add JS function for hover and drop down (IELTS and Spoken English) -->
                 </td>
                 <td>
                     <span><a href="gallery.html">Gallery</a></span>
                 </td>
                 <td>
-                    <span><a href="contact.html"  class="active">Ask Us</a></span>
+                    <span><a href="contact.html">Ask Us</a></span>
                 </td>
             </tr>
         </table>
     </div>
 
-    <!-- <div class="bann prop">
+    <div class="dropdown" id="dropDown">
+        <span class="drop-item"><a href="ielts.html">IELTS</a></span>
+        <span class="drop-item"><a href="spoken-english.html">Spoken English</a></span>
+    </div>
 
-    </div> -->
+    <div class="cover">
+
+    </div>
+
+    <div class="wrapper prop">
+        
+    </div>
 
     <div class="content prop">
 

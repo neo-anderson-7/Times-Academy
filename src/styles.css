@@ -3,7 +3,8 @@
 } */
 
 body {
-    font-family: 'Raleway', sans-serif;;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
 }
 
 span a:link {
@@ -82,12 +83,13 @@ td span a:hover::after {
 .dropdown {
     position: absolute;
     top: 12%;
-    right: 16.5%;
+    right: 16%;
     width: 20%;
     height: 16%;
     background-color: white;
     z-index: 4;
     display: none;
+    border: 1px solid #9800EE;
 }
 
 .dropdown::after {
@@ -96,8 +98,8 @@ td span a:hover::after {
     left: 50%;
     border-width: 10px;
     border-style: solid;
-    border-color: transparent transparent #fff transparent;
-    top: -15%;
+    border-color: transparent transparent #9800EE transparent;
+    top: -16%;
 }
 
 .drop-item {
@@ -106,24 +108,40 @@ td span a:hover::after {
     width: 100%;
     text-decoration: none !important;
     text-align: center;
-    top: 15%;
+    /* top: 15%; */
     color: #9800EE;
-    display: inline-block;
+    /* display: inline-block; */
     cursor: pointer;
     font-size: 1.1em;
+    transition: all ease 0.3s;
+    /* vertical-align: middle; */
+    /* align-items : center; */
+
+    display : flex;
+    align-items : center;
+    justify-content: center;
+}
+
+.drop-item:hover {
+    background-color: #f0f3f7;
+    transition: all ease 0.3s;
 }
 
 .drop-item:first-child::after {
     position: absolute;
-    bottom: 25%;
+    bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
     content: ".";
     color: transparent;
     background-color: #9800EE;
-    height: 1px;
+    height: 0.5px;
     width: 90%;
+}
+
+.drop-item a {
+    vertical-align: middle;
 }
 
 .wrapper {
@@ -131,13 +149,14 @@ td span a:hover::after {
     position: absolute;
     height: 100%;
     top: 0;
-    background-image: url("images/bground.jpg");
     z-index: 0 !important;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: 70%;
     width: 100%;
+}
+
+.wrapper img {
+    width: 70%;
     background-attachment: fixed;
+    clip-path: ellipse(520px 730px at 40% 40%);
 }
 
 .head-text {
@@ -159,7 +178,7 @@ td span a:hover::after {
 }
 
 .content {
-    background-color: white;
+    background-color: blue;
     height: 100%;
     top: 100%;
 }
