@@ -6,7 +6,22 @@ body {
     font-family: 'Raleway', sans-serif;;
 }
 
-span a {
+span a:link {
+    color: #9800EE;
+    text-decoration: none;
+}
+
+span a:visited {
+    color: #9800EE;
+    text-decoration: none;
+}
+
+span a:active {
+    color: #9800EE;
+    text-decoration: none;
+}
+
+td span a {
     text-decoration: none;
     color: #9800EE;
     padding: 10px 10px 10px 10px;
@@ -16,7 +31,7 @@ span a {
     font-size: 1.1em;
 }
 
-span a::after {
+td span a::after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -30,16 +45,29 @@ span a::after {
     transition: all 0.2s ease;
 }
 
-span a:hover::after {
+td span a:hover::after {
     width: 100%;
     transition: all 0.2s ease;
+}
+
+.active::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: ".";
+    color: transparent;
+    background-color: #9800EE;
+    height: 2px;
+    width: 100%;
 }
 
 .prop {
     position: absolute;
     width: 100%;
     left: 0;
-    z-index: 0;
+    z-index: 3;
 }
 
 .nav {
@@ -51,21 +79,95 @@ span a:hover::after {
     z-index: 5 !important;
 }
 
-.bann {
-    height: 90%;
+.dropdown {
+    position: absolute;
+    top: 12%;
+    right: 16.5%;
+    width: 20%;
+    height: 16%;
+    background-color: white;
+    z-index: 4;
+    display: none;
+}
+
+.dropdown::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    top: -15%;
+}
+
+.drop-item {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    text-decoration: none !important;
+    text-align: center;
+    top: 15%;
+    color: #9800EE;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.drop-item:first-child::after {
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: ".";
+    color: transparent;
+    background-color: #9800EE;
+    height: 1px;
+    width: 90%;
+}
+
+.wrapper {
     top: 10%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    background-image: url("images/bground.jpg");
+    z-index: 0 !important;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.head-text {
+    position: relative;
+    /* top: ; */
+    z-index: 2;
+}
+
+.cover {
+    background-image: linear-gradient(to right, rgb(27,33,59,0.7), rgb(46,57,113,1));
+    float: right;    
+    opacity: 1;
+    position: absolute;
+    width: 30%;
+    z-index: 1;
+    height: 99%;
+    left: 0;
+    box-shadow: 10px 0px 60px 150px rgb(46,57,113);
 }
 
 .content {
-    background-color: lime;
+    background-color: white;
     height: 100%;
-    top: 110%;
+    top: 100%;
 }
 
 .infoBottom {
     background-color: black;
     height: 100%;
-    top: 210%;
+    top: 200%;
 }
 
 .nav table {
