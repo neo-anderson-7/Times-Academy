@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/icons/favicon.png" type="image/x-icon">
+    <script src="https://use.fontawesome.com/420a5559c9.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="contact">
+<div class="container-contact">
+<div class="contact-pic js-tilt" data-tilt>
+<img src="images/mail.png">
+</div>
+<form class="contact-form validate-form" method="post" action="mail.php"><!--action="feedbacknew.html"-->
+<span class="contact-form-title">
+Get in touch
+</span>
+<div class="wrap-input1 validate-input" data-validate = "Name is required">
+<input class="input1" type="text" name="name" placeholder="Name" autocomplete="off">
+<span class="shadow-input1"></span>
+</div>
+<div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+<input class="input1" type="text" name="email" placeholder="Email" autocomplete="off">
+<span class="shadow-input1"></span>
+</div>
+<div class="wrap-input1 validate-input" data-validate = "Subject is required">
+<input class="input1" type="text" name="subject" placeholder="Subject" autocomplete="off">
+<span class="shadow-input1"></span>
+</div>
+<div class="wrap-input1 validate-input" data-validate = "Message is required">
+<textarea class="input1" name="message" placeholder="Message" autocomplete="off"></textarea>
+<span class="shadow-input1"></span>
+</div>
+<div class="container-contact-form-btn">
+<button class="contact-form-btn">
+<span>
+Send Email
+<i class="fas fa-angle-right"></i>
+</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/select2/select2.min.js"></script>
+<script src="vendor/tilt/tilt.jquery.min.js"></script>
+<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
