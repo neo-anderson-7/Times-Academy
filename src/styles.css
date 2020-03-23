@@ -216,7 +216,7 @@ td span a:hover::after {
 
 .content {
     background-color: blue;
-    height: 100%;
+    height: 200%;
     top: 100%;
     width: 100%;
 }
@@ -230,8 +230,69 @@ td span a:hover::after {
     left: 15%;
 }
 
-.infoBottom {
-    background-color: black;
-    height: 100%;
-    top: 200%;
+
+.para {
+    position: relative;
+    height: 50%;
+    width: 100%;
+}
+
+.heading {
+    font-size: 2em;
+    line-height: 4em;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 10%;
+}
+
+.heading::after {
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: ".";
+    color: transparent;
+    background-color: #000;
+    height: 3px;
+    width: 15%;
+}
+
+.text {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 90%;
+}
+
+.ending {
+    background-color: #262626;
+    height: 90%;
+    top: 300%;
+}
+
+.info {
+    display : flex;
+    align-items : center;
+    justify-content: center;
+    position: absolute;
+    background-color: red;
+    width: 32%;
+    height: 70%;
+    top: 15%;
+    left: 3%;
+}
+
+.map {
+    display : flex;
+    align-items : center;
+    justify-content: center;
+    position: absolute;
+    background-color: blue;
+    width: 60%;
+    height: 70%;
+    top: 15%;
+    right: 3%;
 }
