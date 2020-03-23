@@ -24,8 +24,12 @@
 	box-sizing: border-box;
 }
 
-body, html {
-	height: 100%;
+body, html, .nav, .dropdown {
+
+	font-family: 'Raleway', sans-serif;
+}
+
+.mail {
 	font-family: Montserrat-Regular, sans-serif;
 }
 
@@ -106,6 +110,8 @@ iframe {
 }
 
 .contact {
+  top: 10%;
+
   width: 100%;
   min-height: 100%;
   padding: 15px;

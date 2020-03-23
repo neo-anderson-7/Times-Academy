@@ -4,32 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/JTA LOGO only png.png"><!-- Favicon -->
-    <link rel="stylesheet" href="css/styles.css"><!-- Stylesheet -->
-    <script src="vendor/script.js"></script><!--JS Script-->
+    <link rel="stylesheet" href="styles.css"><!-- Stylesheet -->
+    <script src="script.js"></script><!--JS Script-->
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"><!-- Font -->
-    <!--<script src="https://kit.fontawesome.com/560be50dc6.js"></script><!--Font Awesome-->-->
+    <script src="https://kit.fontawesome.com/560be50dc6.js"></script><!--Font Awesome-->
     <!--<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script><!--JQuery-->-->
 
     <title>Jaitley's Times Academy</title>
-    <script>
-        var show = false;
-        function toggle() {
-            var scrolled = window.pageYOffset;
-            var pixels = (scrolled + 90).toString() + "px";
-            document.getElementById("dropDown").style.top = pixels;            
-
-            show = !show;
-            document.getElementById("dropDown").style.display = (show) ? "block" : "none";
-        }
-
-        function scroll() {
-            if (show) {
-                var scrolled = window.pageYOffset;
-                var pixels = (scrolled + 90).toString() + "px";
-                document.getElementById("dropDown").style.top = pixels;
-            }
-        }
-    </script>
 </head>
 <body onscroll="scroll()">
     <div class="nav prop">
@@ -38,6 +19,7 @@
                 <td>
                     <!-- Pic here -->
                     <img src="images/JTA LOGO only png.png" id="headpic">
+                    <span class="head-text">Jaitley's Times Academy</span>
                 </td>
                 <td>
                     <span><a href="index.html" class="active">Home</a></span>
@@ -67,7 +49,15 @@
     </div>
 
     <div class="content prop">
+        <div class="content-wrapper">
+            <div class="para why-us">
 
+            </div>
+
+            <div class="para ielts-test">
+
+            </div>
+        </div>
     </div>
 
     <div class="infoBottom prop">
