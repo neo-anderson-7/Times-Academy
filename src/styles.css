@@ -3,7 +3,7 @@
 } */
 
 body {
-    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     font-size: 16px;
 }
@@ -114,7 +114,7 @@ td span a:hover::after {
     background-color: #fff;
     position: fixed !important;
     z-index: 5 !important;
-    font-family: 'Raleway', sans-serif !important;
+    /* font-family: 'Raleway', sans-serif !important; */
 }
 
 .dropdown {
@@ -236,30 +236,52 @@ td span a:hover::after {
     position: relative;
     height: 50%;
     width: 100%;
+    justify-content: center;
 }
 
 .heading {
     font-size: 2em;
     line-height: 4em;
-    display: inline-block;
-    position: relative;
-    width: 100%;
+    overflow: hidden;
     text-align: center;
-    height: 10%;
 }
 
-.heading::after {
-    position: absolute;
-    bottom: -15%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    content: ".";
-    color: transparent;
-    background-color: #000;
-    height: 3px;
-    width: 15%;
+.heading span {
+    position: relative;
+    display: inline-block;
 }
+
+.heading span::before, .heading span::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid;
+    width: 50px; /* half of limiter*/
+    margin: 0 5px;
+}
+
+.heading span::before {
+    right: 100%;
+}
+
+.heading span::after {
+    left: 100%;
+}
+
+/* .heading::after, .heading::before {
+    position: ;
+    top: 90%;
+    overflow: hidden;
+    width: 50%;
+    height: 3px;
+    content: '\a0';
+    background-color: black;
+}
+
+.heading::before {
+    margin-left: -50%;
+    text-align: right;
+} */
 
 .text {
     position: relative;

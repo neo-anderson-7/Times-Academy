@@ -1,22 +1,35 @@
-window.onload = copyright;
-var show = false;
+//  HTML dynamic meta files
 
-function toggle() {
-    var scrolled = window.pageYOffset;
-    var pixels = (scrolled + 90).toString() + "px";
-    document.getElementById("dropDown").style.top = pixels;            
+var roboto = document.createElement('link');
+roboto.href = 'https://fonts.googleapis.com/css?family=Roboto:300&display=swap';
+roboto.rel = 'stylesheet';
+document.getElementsByTagName('head')[0].appendChild(roboto);
 
-    show = !show;
-    document.getElementById("dropDown").style.display = (show) ? "block" : "none";
-}
+var icons = document.createElement('link');
+icons.href = './fontawesome/css/all.css';
+icons.rel = 'stylesheet';
+document.getElementsByTagName('head')[0].appendChild(icons);
 
-function scroll() {
-    if (show) {
-        var scrolled = window.pageYOffset;
-        var pixels = (scrolled + 90).toString() + "px";
-        document.getElementById("dropDown").style.top = pixels;
-    }
-}
+
+
+// var show = false;
+
+// function toggle() {
+//     var scrolled = window.pageYOffset;
+//     var pixels = (scrolled + 90).toString() + "px";
+//     document.getElementById("dropDown").style.top = pixels;            
+
+//     show = !show;
+//     document.getElementById("dropDown").style.display = (show) ? "block" : "none";
+// }
+
+// function scroll() {
+//     if (show) {
+//         var scrolled = window.pageYOffset;
+//         var pixels = (scrolled + 90).toString() + "px";
+//         document.getElementById("dropDown").style.top = pixels;
+//     }
+// }
 
 window.onload = copyright;
 
