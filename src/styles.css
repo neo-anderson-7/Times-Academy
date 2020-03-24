@@ -287,6 +287,20 @@ td span a:hover::after {
     top: 15%;
     left: 8%;
     text-align: left;
+    /* border-left: 1px solid #555; */
+}
+
+.info::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    height: 60%;
+    top: 0;
+    bottom: 0;
+    border-style: solid;
+    border-width:  0 0 0 1px;
+    border-color: rgb(150, 150, 150);
 }
 
 .info span {
@@ -298,10 +312,6 @@ td span a:hover::after {
     /* text-align: center; */
     position: relative;
     left: 5%;
-}
-
-.info span:first-child {
-    font-size: 0.9em;
 }
 
 .info span a {
