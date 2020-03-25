@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/JTA LOGO only png.png"><!-- Favicon -->
-    
+
+    <link rel="stylesheet" href="nav.css"><!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css"><!-- Stylesheet -->
     <script src="script.js"></script><!--Script-->
     
@@ -13,32 +14,17 @@
 </head>
 <body onscroll="scroll()">
     <div class="nav prop">
-        <table>
-            <tr>
-                <td>
-                    <!-- Pic here -->
-                    <img src="images/JTA LOGO only png.png" id="headpic">
-                    <span class="head-text">Jaitley's Times Academy</span>
-                </td>
-                <td>
-                    <span><a href="index.html" class="active">Home</a></span>
-                </td>
-                <td>
-                    <span id="dropDownTrigger" onclick="toggle()"><a>IELTS <i class="fas fa-chevron-down"></i></a></span> <!-- Add JS function for hover and drop down (IELTS and Spoken English) -->
-                </td>
-                <td>
-                    <span><a href="gallery.html">Gallery</a></span>
-                </td>
-                <td>
-                    <span><a href="contact.html">Ask Us</a></span>
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <div class="dropdown" id="dropDown">
-        <span class="drop-item"><a href="ielts.html">IELTS</a></span>
-        <span class="drop-item"><a href="spoken-english.html">Spoken English</a></span>
+        <div class="nav prop">
+            <a href="index.html"><img src="images/head-icon1.PNG" id="head-pic"></a>
+            <a href="index.html" class="links active"><span>Home</span></a>
+            <a href="#" class="links trigger" id="dropDownTrigger" onmouseover="setWidth()"><span>Courses <i class="fas fa-chevron-down"></i></span></a>
+            <div class="dropdown" id="dropDown">
+                <a href="ielts.html" class="drop-item"><span>IELTS</span></a>
+                <a href="spoken-english.html" class="drop-item"><span>Spoken English</span></a>
+            </div>
+            <a href="gallery.html" class="links"><span>Gallery</span></a>
+            <a href="contact.html" class="links"><span>Ask Us</span></a>
+        </div>
     </div>
 
     <div class="wrapper prop">

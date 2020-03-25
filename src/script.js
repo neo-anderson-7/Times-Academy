@@ -11,6 +11,23 @@ icons.rel = 'stylesheet';
 document.getElementsByTagName('head')[0].appendChild(icons);
 
 
+// var elements = document.querySelectorAll('.drop-item');
+// for (i = 0; i < elements.length; i++) {
+//     elements[i].style.width = '173px';
+// }
+
+function setWidth() {
+    elemWidth = document.getElementById('dropDownTrigger').offsetWidth;
+    elemWidth -= 33;
+    elemWidth += "px";
+    document.getElementsByClassName('drop-item')[0].style.width = elemWidth;
+    document.getElementsByClassName('drop-item')[1].style.width = elemWidth;
+}
+
+
+// var dropDownWidth = document.getElementById('dropDownTrigger').offsetWidth;
+// var dropDownWidthPx = dropDownWidth + "px";
+// document.getElementsByClassName('drop-item')[0].getElementsByClassName.width = dropDownWidthPx;
 
 // var show = false;
 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Test</title>
+    <script src="script.js"></script>
+    <link href="nav.css" rel="stylesheet">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="nav prop">
+        <a href="index.html"><img src="images/head-icon1.PNG" id="head-pic"></a>
+        <a href="index.html" class="links active"><span>Home</span></a>
+        <a href="#" class="links trigger" id="dropDownTrigger" onmouseover="setWidth()"><span>Courses <i class="fas fa-chevron-down"></i></span></a>
+        <div class="dropdown" id="dropDown">
+            <a href="ielts.html" class="drop-item"><span>IELTS</span></a>
+            <a href="spoken-english.html" class="drop-item"><span>Spoken English</span></a>
+        </div>
+        <a href="gallery.html" class="links"><span>Gallery</span></a>
+        <a href="contact.html" class="links"><span>Ask Us</span></a>
+    </div>
+
+    <!-- <div class="dropdown" id="dropDown">
+        <a href="ielts.html" class="drop-item"><span>IELTS</span></a>
+        <a href="spoken-english.html" class="drop-item"><span>Spoken English</span></a>
+    </div> -->
+</body>
+</html>
