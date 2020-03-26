@@ -10,46 +10,31 @@ icons.href = './fontawesome/css/all.css';
 icons.rel = 'stylesheet';
 document.getElementsByTagName('head')[0].appendChild(icons);
 
-
-// var elements = document.querySelectorAll('.drop-item');
-// for (i = 0; i < elements.length; i++) {
-//     elements[i].style.width = '173px';
-// }
+//  DropDown width settings
 
 function setWidth() {
+    var fixedVal;
+    switch (window.location.pathname) {
+        case "/C:/Users/HP/Desktop/Anikin/Websites/Yaksh%20IELTS/Times-Academy/src/index.html":
+            fixedVal = 32;
+            break;
+        case "/C:/Users/HP/Desktop/Anikin/Websites/Yaksh%20IELTS/Times-Academy/src/contact.html":
+            fixedVal = 0;
+            break;
+        default:
+            fixedVal = 0;
+    }
+
     elemWidth = document.getElementById('dropDownTrigger').offsetWidth;
-    elemWidth -= 33;
+    elemWidth -= fixedVal;
     elemWidth += "px";
     document.getElementsByClassName('drop-item')[0].style.width = elemWidth;
     document.getElementsByClassName('drop-item')[1].style.width = elemWidth;
 }
 
-
-// var dropDownWidth = document.getElementById('dropDownTrigger').offsetWidth;
-// var dropDownWidthPx = dropDownWidth + "px";
-// document.getElementsByClassName('drop-item')[0].getElementsByClassName.width = dropDownWidthPx;
-
-// var show = false;
-
-// function toggle() {
-//     var scrolled = window.pageYOffset;
-//     var pixels = (scrolled + 90).toString() + "px";
-//     document.getElementById("dropDown").style.top = pixels;            
-
-//     show = !show;
-//     document.getElementById("dropDown").style.display = (show) ? "block" : "none";
-// }
-
-// function scroll() {
-//     if (show) {
-//         var scrolled = window.pageYOffset;
-//         var pixels = (scrolled + 90).toString() + "px";
-//         document.getElementById("dropDown").style.top = pixels;
-//     }
-// }
+//  Copyright section details
 
 window.onload = copyright;
-
 function copyright() {
     var date = new Date();
     var year = date.getFullYear();
@@ -63,17 +48,3 @@ function copyright() {
     copyTxt += "<span>Copyright &copy; " + year + ". Jaitely\'s Times Academy. All rights reserved.</span>";
     document.getElementById("info").innerHTML = copyTxt;
 }
-
-// function click(event) {
-//     var txt = event.target.textContent;
-//     if (txt == "IELTS" || txt == "Spoken English") {
-//         var scrolled = window.pageYOffset;
-//         var pixels = (scrolled + 90).toString() + "px";
-//         document.getElementById("dropDown").style.top = pixels;
-
-//         show = !show;
-//         document.getElementById("dropDown").style.display = (show) ? "block" : "none";
-//     } else {
-//         document.getElementById("dropDown").style.display = "none";
-//     }
-// }

@@ -2,6 +2,8 @@
 
 } */
 
+@import url(https://fonts.googleapis.com/css?family=Sanchez:400italic,400);
+
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
@@ -64,7 +66,7 @@ body {
 }
 
 .content {
-    background-color: blue;
+    background-color: white;
     height: 200%;
     top: 100%;
     width: 100%;
@@ -74,7 +76,7 @@ body {
     background-color: #fff;
     position: relative;
     top: 0;
-    height: 100%;
+    height: 120%;
     width: 75%;
     left: 12.5%;
 }
@@ -136,6 +138,27 @@ body {
     display: inline-block;
     width: 100%;
     height: 90%;
+    font-size: 1.125em;
+    line-height: 1.375em;
+}
+
+.block-quote {
+    position: relative;
+    font-family: 'Sanchez', serif;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    font-style: italic;
+    z-index: 5
+}
+
+.block-quote:before {
+    content: '\201C';
+    position: absolute;
+    top: 0.25em;
+    left: -0.15em;
+    color: #e7e6e4;
+    font-size: 6em;
+    z-index: -1;
 }
 
 .ending {
