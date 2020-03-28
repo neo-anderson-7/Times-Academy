@@ -1,0 +1,128 @@
+/* #main {
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 50%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 30px;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: relative;
+    padding-top: 0.5%;
+    display: inline-block;
+}
+
+.card .img-container {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    height: 45%;
+    top: 10%;
+    box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card .img-container img {
+    width: 100%;
+    position: relative;
+}
+  
+.card p {
+    color: #000;
+    font-size: 18px;
+}
+
+.card .name {
+      font-weight: 700;
+}
+
+.card table {
+    width: 90%;
+    left: 5%;
+    text-align: center;
+    position: relative;
+    border-spacing: 10px;
+} */
+
+#main {
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 50%;
+}
+
+.card {
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    width: 350px;
+    margin: 30px;
+    height: 400px;
+    text-align: center;
+    font-family: arial;
+    background: linear-gradient(left, #0d3f7b, #046bab);
+    background: -moz-linear-gradient(left, #0d3f7b, #046bab);
+    background: -o-linear-gradient(left, #0d3f7b, #046bab);
+    background: -webkit-linear-gradient(left, #0d3f7b, #046bab);
+    position: relative;
+    padding-top: 0.5%;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 6;
+}
+
+.card .text-container {
+    position: absolute;
+    width: 100%;
+    height: 65%;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 7;
+}
+
+.card .img-container {
+    position: absolute;
+    border-radius: 50%;
+    width: 170px;
+    left: 24.5%;
+    height: 170px;
+    top: 13%;
+    z-index: 8;
+    overflow: hidden;
+    border: 5px solid white;
+}
+
+.card .img-container img {
+    width: 100%;
+    position: relative;
+}
+
+.card .name {
+    font-size: 36px !important;
+}
+  
+.card p {
+    color: #000;
+    font-size: 22px;
+    z-index: 8;
+    position: relative;
+    top: 23%;
+}
+
+.card table {
+    width: 90%;
+    top: 20%;
+    left: 5%;
+    text-align: center;
+    position: relative;
+    border-spacing: 10px;
+}
+

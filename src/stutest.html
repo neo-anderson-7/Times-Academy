@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="student.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main"></div>
+
+    <script>
+    function student(src, name) {
+        this.src = src;
+        this.name = name;
+        this.display = display;
+    }
+
+    var student1 = new student(1, "ABC");
+    var student2 = new student(2, "XYZ");
+    var student3 = new student(3, "PQR");
+
+    function display() {
+        var card = document.createElement('div');
+        card.className = 'card';
+
+        var image = document.createElement('img');
+        image.src = `images/students/${this.src}.jpg`;
+        card.appendChild(image);
+
+        var stuName = document.createElement('p');
+        stuName.className = 'name';
+        var stuNameText = document.createTextNode(this.name);
+        stuName.appendChild(stuNameText);
+        card.appendChild(stuName);
+        var main=document.getElementById('main')
+        main.appendChild(card);
+    }
+
+    student1.display();
+    student2.display();
+    student3.display();
+    </script>
+</body>
+</html>

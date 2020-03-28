@@ -10,3 +10,27 @@
     <!--<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>JQuery-->-->
 
     <title>Jaitley's Times Academy</title>
+
+    <div class="card">
+        <div class="img-container"><img src="images/students/1.jpg"></div>
+        <div class="text-container">
+            <p class="name">Name</p>
+            <p>Total Bands</p>
+            <table>
+                <tr>
+                    <td>Reading: </td><td>Speaking: </td>
+                </tr>
+                <tr>
+                    <td>Listening: </td><td>Writing: </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="img-container"><img src="images/students/1.jpg"></div>
+        <div class="text-container">
+            <p class="name">Name</p>
+            <p>Total Bands</p>
+        </div>
+    </div>
