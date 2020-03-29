@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer>
+            var leftDist = 0;
+            var appendTxt = '';
+            setInterval(function() {
+                leftDist -= 100;
+                if (leftDist < -300) {
+                    leftDist = 0;
+                }
+                appendTxt = `${leftDist}%`;
+                document.getElementById('slide-container').style.left = appendTxt;
+            }, 3000);
+    </script>
+
+    <style>
+        .slider {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        #slide-container {
+            position: relative;
+            left: 0;
+            top: 0;
+            width: 400%;
+            height: 100%;
+            transition: all 1s ease-in-out;
+        }
+
+        .slide {
+            position: relative;
+            height: 100%;
+            width: 25%;
+            float: left;
+        }
+    </style>
+    <title>Slideshow</title>
+</head>
+<body>
+    <div class="slider">
+        <div id="slide-container">
+            <div class="slide" style="background-color: red;"></div>
+            <div class="slide" style="background-color: royalblue;"></div>
+            <div class="slide" style="background-color: lime;"></div>
+            <div class="slide" style="background-color: cadetblue;"></div>
+        </div>
+    </div>
+</body>
+</html>
