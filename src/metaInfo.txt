@@ -35,6 +35,6 @@
         </div>
     </div>
 
-    chevron-circle-right
+    <i class="fas fa-info-circle"></i>
 
     <meta http-equiv = "refresh" content = "0; url = /src/main.html" />

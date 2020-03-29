@@ -86,7 +86,16 @@ function display() {
     // bandTable.appendChild(row2);
 
     // card.appendChild(bandTable);
-    document.getElementById('main').appendChild(card);
+
+    if (this.src < 5) {
+        document.getElementById('slide1').appendChild(card);
+    } else if (this.src < 9) {
+        document.getElementById('slide2').appendChild(card);
+    } else if (this.src < 13) {
+        document.getElementById('slide3').appendChild(card);
+    } else if (this.src < 17) {
+        document.getElementById('slide4').appendChild(card);
+    }
 }
 
 student1.display();

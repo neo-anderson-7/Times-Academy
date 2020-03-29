@@ -63,7 +63,7 @@
     box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.4);
     border-radius: 30px;
     width: 300px;
-    margin: 42px;
+    margin: 27px;
     height: 400px;
     text-align: center;
     font-family: arial;
@@ -76,6 +76,7 @@
     display: inline-block;
     overflow: hidden;
     z-index: 6;
+    left: 60px;
 }
 
 .card .text-container {

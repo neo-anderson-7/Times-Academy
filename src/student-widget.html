@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Widget</title>
     <link rel="stylesheet" href="student.css">
+    <link rel="stylesheet" href="slides.css">
+    <script defer src="slideshow.js"></script>
 </head>
 <body>
 
@@ -17,8 +19,20 @@
     </div> -->
 
     
-    <div id="main">
+    <!-- <div id="main">
         
+    </div> -->
+
+    <div class="slider">
+        <div id="slide-container">
+            <div class="slide" id="slide1"></div>
+            <div class="slide" id="slide2"></div>
+            <div class="slide" id="slide3"></div>
+            <div class="slide" id="slide4"></div>
+        </div>
+
+        <span id="leftBtn" onclick="change(-100)"><i class="fas fa-chevron-left"></i></span>
+        <span id="rightBtn" onclick="change(100)"><i class="fas fa-chevron-right"></i></span>
     </div>
     <script src="students.js"></script>
 </body>

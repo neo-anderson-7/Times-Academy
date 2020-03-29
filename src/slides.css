@@ -2,16 +2,17 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 400%;
-    overflow: auto;
-    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    height: 65%;
+    background-color: #fcfcfc;
 }
 
 #slide-container {
     position: relative;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 400%;
     height: 100%;
     transition: all 1s ease-in-out;
 }
@@ -21,4 +22,36 @@
     height: 100%;
     width: 25%;
     float: left;
+}
+
+#leftBtn {
+    position: relative;
+    padding: 20px;
+    font-size: 36px;
+    z-index: 8;
+    top: -55%;
+    background-color: #f0f0f0;
+    left: 0.5%;
+    transition: all 0.2s ease;
+}
+
+#leftBtn:hover {
+    background-color: #e0e0e0;
+    transition: all 0.2s ease;
+}
+
+#rightBtn {
+    position: relative;
+    padding: 20px;
+    font-size: 36px;
+    z-index: 8;
+    top: -55%;
+    background-color: #f0f0f0;
+    right: -91.1%;
+    transition: all 0.2s ease;
+}
+
+#rightBtn:hover {
+    background-color: #e0e0e0;
+    transition: all 0.2s ease;
 }
