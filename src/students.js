@@ -10,8 +10,8 @@ function student(src, name, reading, speaking, listening, writing, overallBands)
 }
 
 var student1 = new student(1, "Dilshad Ladia", 8.5, 7, 8, 7, 7.5);
-var student2 = new student(2, "Iramet Kaur", 7.5, 7.5, 8, 7, 7.5);
-var student3 = new student(3, "HairatPreet Kaur", 7, 6.5, 8.5, 7, 7.5);
+var student2 = new student(2, "Irameet Kaur", 7.5, 7.5, 8, 7, 7.5);
+var student3 = new student(3, "Hairatpreet Kaur", 7, 6.5, 8.5, 7, 7.5);
 var student4 = new student(4, "Ekroop Kaur", 7, 6.5, 9, 6.5, 7.5);
 var student5 = new student(5, "Gauravdeep", 7, 7, 8, 6.5, 7);
 var student6 = new student(6, "Roop Ishwar Singh", 8, 6, 8, 6, 7);

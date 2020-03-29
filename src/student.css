@@ -62,8 +62,8 @@
 .card {
     box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.4);
     border-radius: 30px;
-    width: 350px;
-    margin: 30px;
+    width: 300px;
+    margin: 42px;
     height: 400px;
     text-align: center;
     font-family: arial;
@@ -92,7 +92,7 @@
     position: absolute;
     border-radius: 50%;
     width: 170px;
-    left: 24.5%;
+    left: 21%;
     height: 170px;
     top: 13%;
     z-index: 8;
@@ -106,7 +106,7 @@
 }
 
 .card .name {
-    font-size: 36px !important;
+    font-size: 34px !important;
 }
   
 .card p {

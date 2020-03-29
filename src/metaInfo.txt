@@ -34,3 +34,5 @@
             <p>Total Bands</p>
         </div>
     </div>
+
+    chevron-circle-right
